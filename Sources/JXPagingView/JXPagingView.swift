@@ -240,7 +240,7 @@ open class JXPagingView: UIView {
 
     //MARK: - Private
 
-    func refreshTableHeaderView() {
+    open func refreshTableHeaderView() {
         guard let delegate = delegate else { return }
         let tableHeaderView = delegate.tableHeaderView(in: self)
         let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat(delegate.tableHeaderViewHeight(in: self))))
